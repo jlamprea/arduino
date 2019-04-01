@@ -62,7 +62,7 @@ void loop()
    
   digitalWrite(PIN_SWITCH_1, (RemoteXY.switch_1==0)?HIGH:LOW);
 
-    if (digitalRead(0) == LOW) // if pin 0 enjoyed a high level voltage 
+    if (digitalRead(0) == LOW) // if pin 0 enjoyed a high level voltage se utiliza el pin 0 del NODEMCU
     RemoteXY.EstadoPush_r = 255;   // then turn on red light 
   else                        // else 
     RemoteXY.EstadoPush_r = 0;     // turn off red 
